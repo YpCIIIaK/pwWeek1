@@ -1,0 +1,26 @@
+$primary-color: #3498db;
+$shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+.card {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  width: 300px;
+  box-shadow: $shadow;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+
+  &__title {
+    color: $primary-color;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  &__description {
+    color: #666;
+    font-size: 16px;
+  }
+}
