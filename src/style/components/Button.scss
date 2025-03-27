@@ -1,0 +1,38 @@
+@import '../global/colors';
+@import '../utils/typography';
+@import '../utils/breakpoints';
+
+.button_default_primary {
+  position: relative;
+  width: 13.8rem;
+  height: 4.6rem;
+  border-radius: 1.2rem;
+  background-color: $ultramarine-default-color;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  @include text-button;
+
+  &__title {
+    text-align: center;
+  }
+
+  &__icon-left,
+  &__icon-right {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.6rem;
+    height: 1.6rem;
+  }
+
+  &__icon-left {
+    left: 1.6rem;
+  }
+
+  &__icon-right {
+    right: 1.6rem;
+  }
+}
